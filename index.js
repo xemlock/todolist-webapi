@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const port = 8765;
+const port = process.env.PORT || 8765;
 const app = express();
 
 let todosCounter = 0;
